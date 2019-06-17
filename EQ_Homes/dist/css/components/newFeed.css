@@ -1,0 +1,84 @@
+.newFeed {
+  background-color: #ebebeb; }
+  .newFeed .container .newFeed_flexBox .newFeed_flexBox_boxCard {
+    padding-top: 1em; }
+    .newFeed .container .newFeed_flexBox .newFeed_flexBox_boxCard .title {
+      margin-top: 1rem;
+      font-size: 1.5rem;
+      color: black;
+      font-weight: bold;
+      padding: 0;
+      width: 100%;
+      text-transform: uppercase; }
+  .newFeed .container .newFeed_flexBox .lineBottom {
+    border-bottom: 2px solid #00709e;
+    margin-bottom: 1rem; }
+  .newFeed .container .newFeed_flexBox .slick {
+    display: flex; }
+    .newFeed .container .newFeed_flexBox .slick .card {
+      margin-bottom: 1rem;
+      display: flex;
+      flex-direction: row; }
+      .newFeed .container .newFeed_flexBox .slick .card .images-carousel {
+        width: 50%; }
+      .newFeed .container .newFeed_flexBox .slick .card .flied-card {
+        cursor: pointer;
+        margin: 30px 0 30px 4%; }
+        .newFeed .container .newFeed_flexBox .slick .card .flied-card p {
+          font-size: 1rem;
+          color: black; }
+        .newFeed .container .newFeed_flexBox .slick .card .flied-card:hover {
+          text-decoration: none; }
+        .newFeed .container .newFeed_flexBox .slick .card .flied-card .card-title {
+          font-weight: bold;
+          font-size: 1.8rem; }
+        .newFeed .container .newFeed_flexBox .slick .card .flied-card .card-date {
+          font-family: monospace; }
+
+.newFeed {
+  padding-bottom: 5rem; }
+  .newFeed .slick-dots {
+    position: absolute;
+    bottom: -15px;
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+    z-index: 1050; }
+    .newFeed .slick-dots li {
+      position: relative;
+      display: inline-block;
+      margin: 0 5px;
+      padding: 0;
+      cursor: pointer; }
+      .newFeed .slick-dots li button {
+        font-size: 0;
+        line-height: 0;
+        display: block;
+        width: 15px;
+        height: 15px;
+        padding: 5px;
+        cursor: pointer;
+        color: transparent;
+        border: 0;
+        outline: none;
+        background: #fff;
+        border-radius: 50%; }
+    .newFeed .slick-dots .slick-active button {
+      background-color: #50b7d8; }
+
+@media screen and (min-width: 768px) {
+  .newFeed .container .newFeed_flexBox .slick .card .images-carousel {
+    width: 100%; }
+  .newFeed .container .newFeed_flexBox .slick .card .flied-card p {
+    font-size: 1.6rem; } }
+
+@media screen and (max-width: 992px) {
+  .newFeed .container .newFeed_flexBox .slick .card {
+    margin: 2rem 10rem; } }
+
+@media screen and (max-width: 576px) {
+  .newFeed .container .newFeed_flexBox .slick .card {
+    margin: 2rem 0rem; } }

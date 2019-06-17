@@ -1,0 +1,43 @@
+//- section#contact-form
+//-     h1.col-md-12.text-center GỬI THÔNG TIN CHO CHÚNG TÔI
+//-     form.form-kg
+//-         .form-group-kg.row
+//-             .field-kg.col-lg-6.col-md-6
+//-                 input.form-control.form-input-kg(type="text" placeholder="Họ và tên")
+//-             .field-kg.col-lg-6.col-md-6
+//-                 input.form-control.form-input-kg(type="tel" placeholder="Số điện thoại")
+//-         .form-group-kg.row
+//-             .field-kg.col-lg-6.col-md-6
+//-                 input.form-control.form-input-kg(type="email" placeholder="Email")
+//-             .form-icon.col-lg-6.col-md-6.form-control.form-input-kg
+//-                 .field-kg.col-lg-6.col-md-6
+//-                     label#custom_upload Ảnh
+//-                         i.fas.fa-upload#upload_icon
+//-         .form-group-kg.row
+//-             textarea.text-area.form-control(rows="12" placeholder="Mô tả")
+//-         .row
+//-             .col-12.text-center
+//-                 button Gửi
+
+section#contact-form.m-auto
+    .row
+        h1.col-md-12.text-center GỬI THÔNG TIN CHO CHÚNG TÔI
+    form
+        .form-group.row
+            .col-md-6
+                input(type="text" placeholder="Họ và tên").form-control
+            .col-md-6
+                input(type="tel" placeholder="Số điện thoại").form-control
+        .form-group.row
+            .col-md-6
+                input(type="email" placeholder="Email").form-control
+            .col-md-6
+                label(for="upload_file" class="form-control" id="custom_upload") Ảnh
+                    input(type="file" class="form-control hidden" id="upload_file")
+                    i.fas.fa-upload#upload_icon
+        .form-group.row
+            .col-md-12
+                textarea.form-control.text-area(rows="12" col="5" placeholder="Mô tả")
+        .row
+            .col-12.text-center
+                button Gửi

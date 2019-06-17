@@ -1,0 +1,53 @@
+form {
+  padding: 2rem 6rem; }
+  form h3 {
+    color: red;
+    text-align: center; }
+  form .form-group-lh .field-lh {
+    margin-top: 1.5rem;
+    justify-content: space-between; }
+    form .form-group-lh .field-lh label {
+      font-size: 12px;
+      flex: 1; }
+    form .form-group-lh .field-lh span {
+      flex: 4; }
+      form .form-group-lh .field-lh span .input {
+        width: 100%;
+        padding: 7px;
+        border-radius: 4px;
+        border: 1px solid #ccc;
+        font-size: 14px; }
+    form .form-group-lh .field-lh .textarea {
+      display: block;
+      width: 100%;
+      font-size: 14px;
+      padding: .5rem; }
+  form .form-group-lh .info {
+    padding: 0;
+    flex-wrap: nowrap; }
+    form .form-group-lh .info .input-if {
+      font-size: 12px;
+      margin: 0 5px;
+      width: 100%;
+      border-radius: 4px;
+      border: none;
+      outline: none;
+      padding: 0 5px; }
+    form .form-group-lh .info label {
+      white-space: nowrap;
+      font-size: 12px; }
+    form .form-group-lh .info button {
+      margin-left: 10px;
+      padding: 0;
+      border: none;
+      background-color: green;
+      border-radius: 3px; }
+      form .form-group-lh .info button i {
+        padding: 0 4px;
+        color: white; }
+  form .form-group-lh .button-bt-lh {
+    justify-content: center; }
+    form .form-group-lh .button-bt-lh button {
+      margin: 0 5px;
+      padding: 0 10px;
+      font-size: 14px; }

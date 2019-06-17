@@ -1,0 +1,74 @@
+#contact-form {
+    font-family: sans-serif;
+    margin: 2rem auto !important;
+    .form-kg{
+        width: 100%;
+    }
+    h1 {
+        font-size: 2.4rem;
+        color: #0d3d6e;
+        font-weight: normal;
+        margin: 2rem 0;
+    }
+
+    .form-control {
+        padding: .6rem .5rem;
+        background: #f5f6f7;
+        font-size: 1.4rem;
+        outline: none;
+        font-weight: bold;
+        margin-bottom: 1.5rem;
+    }
+
+    input {
+        outline: none;
+        width: 100%;
+        font-size: 14px;
+    }
+
+    button {
+        background: #00709e;
+        color: #fff;
+        border: none;
+        border-radius: 1.5rem;
+        font-size: 1.4rem;
+        margin-top: 1rem;
+        font-weight: bold;
+        letter-spacing: 1px;
+        padding: 5px 20px;
+    }
+
+    .text-area {
+        margin-top: 1.5rem;
+        padding: 5px;
+    }
+
+    .custom_upload {
+        background-color: #f5f6f7;
+        font-weight: bold;
+        line-height: 30px;
+    }
+
+    label#custom_upload {
+        margin: 0;
+        color: gray;
+        position: relative;
+        #upload_icon {
+            position: absolute;
+            top: 5px;
+            right: 3px;
+            color: gray
+        }
+    }
+    
+    
+    .form-group
+    input[type=file] {
+        display: none;
+    }
+
+    &::placeholder {
+        color: gray;
+        font-size: 14px;
+    }
+}

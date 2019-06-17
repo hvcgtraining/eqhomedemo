@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  padding-top: 0; }
+
+.navigation {
+  font-size: 1.4rem;
+  z-index: 999;
+  background: white; }
+  .navigation .header {
+    display: flex;
+    justify-content: space-between;
+    margin: 0rem calc(50% - 540px);
+    padding: 2rem 0;
+    background: white; }
+    .navigation .header .logo__img {
+      margin-right: 2rem; }
+      .navigation .header .logo__img img {
+        width: 100%;
+        height: 100%; }
+    .navigation .header .banner__img img {
+      width: 100%;
+      height: 100%; }
+  .navigation .menu {
+    display: flex;
+    justify-content: center;
+    background: #0e314c;
+    display: block; }
+    .navigation .menu .nav__list {
+      display: flex;
+      justify-content: center;
+      list-style-type: none;
+      margin: 0;
+      background: #0e314c;
+      width: 100%; }
+      .navigation .menu .nav__list .active .nav__item .nav__link {
+        background: #00709e; }
+      .navigation .menu .nav__list .nav__item {
+        display: inline-block;
+        position: relative; }
+        .navigation .menu .nav__list .nav__item .nav__link {
+          z-index: 99;
+          display: block;
+          text-decoration: none;
+          color: white;
+          border: 0.5px solid white;
+          background: #0e314c;
+          padding: 1rem 1rem;
+          min-width: 12rem;
+          text-align: center; }
+          .navigation .menu .nav__list .nav__item .nav__link:hover {
+            background: #00709e; }
+        .navigation .menu .nav__list .nav__item .nav-sub__list {
+          z-index: 99;
+          position: absolute;
+          top: 100%;
+          list-style-type: none;
+          background: #0e314c;
+          display: none; }
+          .navigation .menu .nav__list .nav__item .nav-sub__list .nav-sub-item .nav-sub__link {
+            display: block;
+            text-decoration: none;
+            color: white;
+            border: 0.5px solid white;
+            background: #0e314c;
+            padding: 1rem 1rem;
+            min-width: 20rem;
+            text-align: left; }
+            .navigation .menu .nav__list .nav__item .nav-sub__list .nav-sub-item .nav-sub__link:hover {
+              background: #00709e; }
+  .navigation .menu-mobile {
+    display: flex;
+    justify-content: flex-end;
+    background: #0e314c;
+    position: relative;
+    display: none; }
+    .navigation .menu-mobile .checked span {
+      background: #00709e; }
+    .navigation .menu-mobile span {
+      display: block;
+      width: 45px;
+      height: 45px;
+      border: 1px solid #0e314c;
+      transition: 0.3s;
+      cursor: pointer; }
+      .navigation .menu-mobile span .dropmenu {
+        font-size: 4rem;
+        text-align: center;
+        padding-top: 0.2rem;
+        padding-left: 0.4rem;
+        color: white; }
+      .navigation .menu-mobile span .nav__list {
+        z-index: 99;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        list-style-type: none;
+        background: #0e314c;
+        width: 100%;
+        display: none; }
+        .navigation .menu-mobile span .nav__list .active .nav__item {
+          border-left: 5px solid #dbc02a; }
+          .navigation .menu-mobile span .nav__list .active .nav__item .nav__link {
+            background: #00709e; }
+        .navigation .menu-mobile span .nav__list .nav__item .nav__link {
+          display: block;
+          text-decoration: none;
+          color: white;
+          background: #538ba1;
+          padding: 1rem 1rem;
+          transition: 0.3s; }
+          .navigation .menu-mobile span .nav__list .nav__item .nav__link:hover {
+            background: #00709e; }
+        .navigation .menu-mobile span .nav__list .nav__item .nav-sub__list {
+          list-style-type: none;
+          background: #0e314c;
+          display: none; }
+          .navigation .menu-mobile span .nav__list .nav__item .nav-sub__list .nav-sub-item .nav-sub__link {
+            display: block;
+            text-decoration: none;
+            color: white;
+            background: #0e314c;
+            padding: 1rem 1rem;
+            min-width: 20rem;
+            text-align: left;
+            padding-left: 3rem; }
+            .navigation .menu-mobile span .nav__list .nav__item .nav-sub__list .nav-sub-item .nav-sub__link:hover {
+              background: #214561; }
+
+@media only screen and (max-width: 1170px) {
+  .navigation .header {
+    display: flex;
+    padding: 2rem 0;
+    margin: 0; }
+  .navigation .menu {
+    display: none; }
+  .navigation .menu-mobile {
+    display: block; } }

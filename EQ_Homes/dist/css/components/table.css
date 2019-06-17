@@ -1,0 +1,75 @@
+table {
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse; }
+
+.table {
+  border-radius: 2px;
+  overflow: hidden;
+  min-width: 720px; }
+  .table .tbl-header {
+    background-color: #6c7ae0;
+    border-radius: 2px 2px 0 0; }
+  .table .tbl-content {
+    max-height: 400px;
+    overflow: auto;
+    margin-top: 0px;
+    color: #808080;
+    background-color: white;
+    overflow-y: auto;
+    border-left: 1px solid #fafafa; }
+  .table .tbl-footer {
+    background-color: #6c7ae0;
+    padding: 5px 0;
+    border-radius: 0 0 2px 2px; }
+    .table .tbl-footer table td {
+      color: white;
+      padding: 10px 5px;
+      font-size: 16px; }
+
+th,
+tfoot {
+  padding: 15px 5px;
+  font-weight: 500;
+  font-size: 16px;
+  text-transform: uppercase;
+  text-align: left;
+  color: white; }
+
+td {
+  padding: 10px;
+  vertical-align: middle;
+  font-weight: 300;
+  font-size: 14px;
+  text-align: left; }
+
+.table-hover .tbl-content tr:hover {
+  background-color: rgba(0, 0, 0, 0.2) !important; }
+
+.tbl-light table thead {
+  background-color: #fafafa; }
+  .tbl-light table thead th {
+    color: #808080; }
+
+.tbl-dark table thead {
+  background-color: #8f8f8f; }
+
+.tbl-odd-light .tbl-content tr:nth-child(odd) {
+  background-color: #f2f2f2; }
+
+.tbl-odd-dark .tbl-content tr:nth-child(odd) {
+  background-color: #32383e; }
+
+/* for custom scrollbar for webkit browser*/
+::-webkit-scrollbar {
+  width: 6px; }
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3); }
+
+::-webkit-scrollbar-thumb {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3); }
+
+@media (max-width: 768px) {
+  .responsive-table {
+    overflow: auto; } }

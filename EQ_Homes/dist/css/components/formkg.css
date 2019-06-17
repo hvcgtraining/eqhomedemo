@@ -1,0 +1,53 @@
+#contact-form {
+  font-family: sans-serif;
+  margin: 2rem auto !important; }
+  #contact-form .form-kg {
+    width: 100%; }
+  #contact-form h1 {
+    font-size: 2.4rem;
+    color: #0d3d6e;
+    font-weight: normal;
+    margin: 2rem 0; }
+  #contact-form .form-control {
+    padding: .6rem .5rem;
+    background: #f5f6f7;
+    font-size: 1.4rem;
+    outline: none;
+    font-weight: bold;
+    margin-bottom: 1.5rem; }
+  #contact-form input {
+    outline: none;
+    width: 100%;
+    font-size: 14px; }
+  #contact-form button {
+    background: #00709e;
+    color: #fff;
+    border: none;
+    border-radius: 1.5rem;
+    font-size: 1.4rem;
+    margin-top: 1rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding: 5px 20px; }
+  #contact-form .text-area {
+    margin-top: 1.5rem;
+    padding: 5px; }
+  #contact-form .custom_upload {
+    background-color: #f5f6f7;
+    font-weight: bold;
+    line-height: 30px; }
+  #contact-form label#custom_upload {
+    margin: 0;
+    color: gray;
+    position: relative; }
+    #contact-form label#custom_upload #upload_icon {
+      position: absolute;
+      top: 5px;
+      right: 3px;
+      color: gray; }
+  #contact-form .form-group
+input[type=file] {
+    display: none; }
+  #contact-form::placeholder {
+    color: gray;
+    font-size: 14px; }

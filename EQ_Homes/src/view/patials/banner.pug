@@ -1,0 +1,156 @@
+section#banner
+    .container  
+        
+        ul.nav.nav-tabs
+            li.nav-item
+                a.nav-link.active.btn-navtab(data-toggle="tab",id="home-tab", role="tab", aria-selected="true", href="#tab1") NHÀ ĐẤT THỔ CƯ
+            li.nav-item
+                a.nav-link.btn-navtab(data-toggle="tab",id="home-tab", role="tab", aria-selected="false", href="#tab2") DỰ ÁN 
+            li.nav-item
+                a.nav-link.btn-navtab(data-toggle="tab", id="home-tab", role="tab", aria-selected="false", href="#tab3") CHO THUÊ
+
+
+
+
+        .tab-content#wrapNavBar
+            .tab-pane.fade.show.active.container#tab1(role="tabpanel")
+                .form-group
+                    input(type="text" placeholder="Nhập địa chỉ").form-control.mb-3.mr-sm-2#input-search
+                    .row
+                        .col-lg-2.col-md-4.col-sm-6.select-option
+                            select.form-control.form-control-lg.mb-3.select-s Loại BĐS
+                                option(selected) Loại BĐS
+                                option(value="1") Đất nền
+                                option(value="1") Chung cư
+                                option(value="1") Nhà trọ
+                        .col-lg-2.col-md-4.col-sm-6.select-option
+                            -var area = ["Thành phố Hà Nội", "Tỉnh Hà Giang", "Tỉnh Cao Bằng", "Tỉnh Bắc Kạn", "Tỉnh Tuyên Quang"]
+                            select.form-control.form-control-lg.mb-3.select-s.b-c-city Tỉnh/Thành Phố
+                                option(selected value=0) Tỉnh/Thành Phố
+                                //- -for(var i = 0; i < area.length;i++){ 
+                                //-     option(value=i+1)= area[i] 
+                                //- -}   
+                        .col-lg-2.col-md-4.col-sm-6.select-option
+                            select.form-control.form-control-lg.mb-3.select-s.b-c-dis  Quận/Huyện
+                                option(selected value=0) Quận/Huyện
+                        .col-lg-2.col-md-4.col-sm-6.select-option
+                            //- -var acreage = ["<=30 m2", "30-50 m2"]
+
+                            select.form-control.form-control-lg.mb-3.select-s.b-c-st  Chọn diện tích
+                                option(selected) Chọn diện tích
+                                //- -for(var i = 0; i < acreage.length;i++){ 
+                                //-     option(value=i+1)= acreage[i] 
+                                //- -} 
+                        .col-lg-2.col-md-4.col-sm-6.select-option
+                            //- -var price = ["< 500 triệu", "500 - 800 triệu"]
+                            select.form-control.form-control-lg.mb-3.select-s Giá
+                                option(selected) Giá
+                                //- -for(var i = 0; i < pr  ice.length;i++){ 
+                                //-     option(value=i+1)= price[i] 
+                                //- -}
+                        .col-lg-2.col-md-4.col-sm-6.select-option
+                            //- -var direction = ["Đông", "Đông Bắc", "Tây", "Tây Nam"]
+                            select.form-control.form-control-lg.mb-3.select-s Hướng
+                                option(selected) Hướng
+                                //- -for(var i = 0; i < direction.length;i++){ 
+                                //-     option(value=i+1)= direction[i] 
+                                //- -}
+                    .row
+                        .col-lg-2.offset-lg-10
+                            button(type="button").btn.btn-primary.btn-lg.bn-s-btn TÌM KIẾM      
+                                i.fa.fa-search
+
+            .tab-pane.fade.container#tab2(role="tabpanel")
+
+                .form-group
+                    input(type="text" placeholder="Nhập địa chỉ").form-control.mb-3.mr-sm-2#input-search
+                    .row
+                        .col-lg-2.col-md-4.col-sm-6.select-option
+                            select.form-control.form-control-lg.mb-3.select-s
+                                option(selected) Loại BĐS
+                                option(value="1") Chung cư
+                        .col-lg-2.col-md-4.col-sm-6.select-option
+                            //- -var area = ["Thành phố Hà Nội", "Tỉnh Hà Giang", "Tỉnh Cao Bằng", "Tỉnh Bắc Kạn", "Tỉnh Tuyên Quang"]
+                            select.form-control.form-control-lg.mb-3.select-s.b-c-city
+                                option(selected value=0) Tỉnh/Thành Phố
+                                //- -for(var i = 0; i < area.length;i++){ 
+                                //-     option(value=i+1)= area[i] 
+                                //- -}   
+                        .col-lg-2.col-md-4.col-sm-6.select-option
+                            select.form-control.form-control-lg.mb-3.select-s.b-c-dis
+                                option(selected value=0) Quận/Huyện
+                        .col-lg-2.col-md-4.col-sm-6.select-option
+                            //- -var acreage = ["<=30 m2", "30-50 m2"]
+
+                            select.form-control.form-control-lg.mb-3.select-s.b-c-st
+                                option(selected) Chọn diện tích
+                                //- -for(var i = 0; i < acreage.length;i++){ 
+                                //-     option(value=i+1)= acreage[i] 
+                                //- -} 
+                                    
+                        .col-lg-2.col-md-4.col-sm-6.select-option
+                            //- -var price = ["< 500 triệu", "500 - 800 triệu"]
+                            select.form-control.form-control-lg.mb-3.select-s
+                                option(selected) Giá
+                                //- -for(var i = 0; i < price.length;i++){ 
+                                //-     option(value=i+1)= price[i] 
+                                //- -}
+                        .col-lg-2.col-md-4.col-sm-6.select-option
+                            //- -var direction = ["Đông", "Đông Bắc", "Tây", "Tây Nam"]
+                            select.form-control.form-control-lg.mb-3.select-s
+                                option(selected) Hướng
+                                //- -for(var i = 0; i < direction.length;i++){ 
+                                //-     option(value=i+1)= direction[i] 
+                                //- -}
+                    .row
+                        .col-lg-2.offset-lg-10
+                            button(type="button").btn.btn-primary.bn-s-btn TÌM KIẾM      
+                                i.fa.fa-search
+
+
+
+            .tab-pane.fade.container#tab3(role="tabpanel")        
+
+                .form-group
+                    input(type="text" placeholder="Nhập địa chỉ").form-control.mb-3.mr-sm-2#input-search
+                    .row
+                        .col-lg-2.col-md-4.col-sm-6.select-option
+                            select.form-control.form-control-lg.mb-3.select-s
+                                option(selected) Loại BĐS
+                                option(value="1") Chung cư
+                        .col-lg-2.col-md-4.col-sm-6.select-option
+                            //- -var area = ["Thành phố Hà Nội", "Tỉnh Hà Giang", "Tỉnh Cao Bằng", "Tỉnh Bắc Kạn", "Tỉnh Tuyên Quang"]
+                            select.form-control.form-control-lg.mb-3.select-s.b-c-city
+                                option(selected value=0) Tỉnh/Thành Phố
+                                //- -for(var i = 0; i < area.length;i++){ 
+                                //-     option(value=i+1)= area[i] 
+                                //- -}   
+                        .col-lg-2.col-md-4.col-sm-6.select-option
+                            select.form-control.form-control-lg.mb-3.select-s.b-c-dis
+                                option(selected value=0) Quận/Huyện
+                        .col-lg-2.col-md-4.col-sm-6.select-option
+                            //- -var acreage = ["<=30 m2", "30-50 m2"]
+
+                            select.form-control.form-control-lg.mb-3.select-s.b-c-st
+                                option(selected) Chọn diện tích
+                                //- -for(var i = 0; i < acreage.length;i++){ 
+                                //-     option(value=i+1)= acreage[i] 
+                                //- -} 
+                        .col-lg-2.col-md-4.col-sm-6.select-option
+                            //- -var price = ["< 500 triệu", "500 - 800 triệu"]
+                            select.form-control.form-control-lg.mb-3.select-s
+                                option(selected) Giá
+                                //- -for(var i = 0; i < price.length;i++){ 
+                                //-     option(value=i+1)= price[i] 
+                                //- -}
+                        .col-lg-2.col-md-4.col-sm-6.select-option
+                            //- -var direction = ["Đông", "Đông Bắc", "Tây", "Tây Nam"]
+                            select.form-control.form-control-lg.mb-3.select-s
+                                option(selected) Hướng
+                                //- -for(var i = 0; i < direction.length;i++){ 
+                                //-     option(value=i+1)= direction[i] 
+                                //- -}
+                    .row
+                        .col-lg-2.offset-lg-10
+                            button(type="button").btn.btn-primary.bn-s-btn TÌM KIẾM      
+                                i.fa.fa-search

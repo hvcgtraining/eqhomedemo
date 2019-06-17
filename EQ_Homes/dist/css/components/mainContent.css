@@ -1,0 +1,140 @@
+body {
+  background: #ebebeb;
+  padding-top: 3rem; }
+
+.wrapper-main-content {
+  margin: auto; }
+
+.box-main-content {
+  padding-right: .5rem; }
+
+.title-content {
+  color: #fff;
+  display: flex;
+  background: #8dcff4d4;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 1rem; }
+  .title-content:before {
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background: #00709e;
+    left: 0;
+    bottom: 0; }
+  .title-content h6 {
+    font-size: 1.5rem;
+    background: #0977a5;
+    margin: 0;
+    padding: 1rem;
+    position: relative; }
+    .title-content h6:after {
+      content: '';
+      position: absolute;
+      border-bottom: 5rem solid #0977a5;
+      border-right: 2rem solid transparent;
+      top: -5px;
+      right: -20px; }
+
+.wrapper-content {
+  line-height: 1.5rem;
+  padding: 0 1.5rem; }
+  .wrapper-content .box-content {
+    border: 1px solid #e2e2e2;
+    transition: all .5s ease; }
+    .wrapper-content .box-content:hover {
+      box-shadow: 3px 6px 7px -1px #d0cccc;
+      transform: translateY(-2px);
+      transition: all .3s ease; }
+    .wrapper-content .box-content .img-block {
+      position: relative; }
+      .wrapper-content .box-content .img-block:before {
+        content: '';
+        padding-top: 90%;
+        display: block; }
+      .wrapper-content .box-content .img-block img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
+    .wrapper-content .box-content .item-content {
+      font-size: 16px;
+      padding: 1.5rem 2rem;
+      background: #fff; }
+      .wrapper-content .box-content .item-content a {
+        text-decoration: none;
+        color: #666666;
+        font-weight: 500; }
+        .wrapper-content .box-content .item-content a:hover {
+          color: #075cfa; }
+        .wrapper-content .box-content .item-content a:focus {
+          outline: none; }
+        .wrapper-content .box-content .item-content a p {
+          margin-bottom: .8rem; }
+      .wrapper-content .box-content .item-content .address {
+        font-size: 0; }
+        .wrapper-content .box-content .item-content .address .icon-address {
+          vertical-align: top;
+          display: inline-block;
+          width: 20px;
+          height: 20px; }
+          .wrapper-content .box-content .item-content .address .icon-address img {
+            max-width: 100%;
+            max-height: 100%; }
+        .wrapper-content .box-content .item-content .address h5 {
+          vertical-align: middle;
+          display: inline-block;
+          font-size: 14px;
+          width: calc(100% - 20px);
+          padding-left: .5rem; }
+
+.slide-content.slick-initialized.slick-slider.slick-dotted .slick-list {
+  margin: 0 -15px; }
+
+.slide-content.slick-initialized.slick-slider.slick-dotted .slick-dots {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 2rem 0;
+  list-style-type: none;
+  position: relative !important; }
+  .slide-content.slick-initialized.slick-slider.slick-dotted .slick-dots li {
+    margin: 0 0.25rem; }
+  .slide-content.slick-initialized.slick-slider.slick-dotted .slick-dots button {
+    font-size: 0;
+    display: block;
+    width: 1.5rem;
+    height: 1.5rem;
+    padding: 0;
+    border: 1px solid #eeeeee;
+    border-radius: 100%;
+    background-color: #fff;
+    text-indent: -9999px; }
+    .slide-content.slick-initialized.slick-slider.slick-dotted .slick-dots button:hover, .slide-content.slick-initialized.slick-slider.slick-dotted .slick-dots button:focus {
+      outline: none; }
+  .slide-content.slick-initialized.slick-slider.slick-dotted .slick-dots li.slick-active button {
+    background-color: #72c3f1; }
+
+.banner-main {
+  margin: 3rem 0 5rem; }
+  .banner-main img {
+    width: 100%; }
+
+@media only screen and (min-width: 360px) {
+  .slide-content .slick-list {
+    margin: 0 -15px !important; }
+  .slide-content .wrapper-content:focus {
+    outline: none; } }
+
+@media only screen and (max-width: 768px) {
+  .box-main-content {
+    margin-top: 2rem; }
+    .box-main-content:first-child {
+      margin-top: 0; } }
+
+@media only screen and (max-width: 992px) {
+  .container {
+    max-width: 100% !important; } }

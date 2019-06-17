@@ -1,0 +1,70 @@
+form{
+    padding: 2rem 6rem;
+    h3{
+        color: red;
+        text-align: center;
+    }
+    .form-group-lh{
+        .field-lh{
+            margin-top: 1.5rem;
+            justify-content: space-between;
+            label{
+                font-size: 12px;
+                flex: 1;
+            }
+            span{
+                flex: 4;
+                .input{
+                    width: 100%;
+                    padding: 7px;
+                    border-radius: 4px;
+                    border: 1px solid #ccc;
+                    font-size: 14px;
+                }
+            }
+            .textarea{
+                display: block;
+                width: 100%;
+                font-size: 14px;
+                padding: .5rem;
+            }
+        }
+        .info{
+            padding: 0;
+            flex-wrap: nowrap;
+            .input-if{
+                font-size: 12px;
+                margin: 0 5px;
+                width: 100%;
+                border-radius: 4px;
+                border: none;
+                outline: none;
+                padding: 0 5px;
+            }
+            label{
+                white-space: nowrap;
+                font-size: 12px;
+            }
+            button{
+                margin-left: 10px;
+                padding: 0;
+                border: none;
+                background-color: green;
+                border-radius: 3px;
+                i{
+                    padding: 0 4px;
+                    color: white;
+                }
+                
+            }
+        }
+        .button-bt-lh{
+            justify-content: center;
+            button{
+                margin: 0 5px;
+                padding: 0 10px;
+                font-size: 14px;
+            }
+        }
+    }
+}

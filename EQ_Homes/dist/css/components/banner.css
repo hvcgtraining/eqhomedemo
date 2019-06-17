@@ -1,0 +1,80 @@
+#banner {
+  background-image: url("../../dist/assets/images/Untitled-5.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-color: #ebebeb;
+  padding: 3rem 0 5rem; }
+  #banner .nav {
+    flex-wrap: nowrap !important; }
+
+#wrapNavBar {
+  background-color: rgba(94, 184, 214, 0.8);
+  padding: 2rem; }
+
+.btn-navtab {
+  font-family: arial;
+  font-size: 16px;
+  color: #203866 !important;
+  background-color: #fff !important;
+  border-color: #dee2e6 #dee2e6 #fff !important;
+  padding: 1rem 4rem !important; }
+
+#input-search {
+  font-size: 16px;
+  padding: 0.5rem 1rem;
+  border-radius: 4px; }
+
+.select-option {
+  border-radius: none !important;
+  font-size: 14px !important;
+  line-height: 1.5rem !important; }
+
+.select-s {
+  height: 4rem !important; }
+
+.bn-s-btn {
+  font-size: 16px !important;
+  text-align: left !important;
+  padding: 0.8rem 1rem 0.8rem 1rem !important;
+  background-color: #203866 !important;
+  border: none !important;
+  transition: 0.3s; }
+  .bn-s-btn:hover {
+    background-color: #286090 !important; }
+
+.nav-tabs .nav-item .active {
+  background-color: #203866 !important;
+  color: #ffffff !important;
+  font-weight: bold !important; }
+
+@media only screen and (max-width: 992px) {
+  .btn-navtab {
+    font-family: arial;
+    font-size: 13px;
+    color: #203866 !important;
+    background-color: #fff !important;
+    border-color: #dee2e6 #dee2e6 #fff !important;
+    padding: 0.8rem 3rem !important; }
+  #banner {
+    background: #ebebeb; }
+  .select-s {
+    height: 3rem !important;
+    font-size: 13px !important;
+    font-weight: bold !important; }
+  .bn-s-btn {
+    font-size: 13px !important;
+    text-align: left !important;
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem !important;
+    background-color: #203866 !important;
+    border: none !important;
+    transition: 0.3s; }
+    .bn-s-btn:hover {
+      background-color: #286090 !important; } }
+
+@media only screen and (max-width: 768px) {
+  #banner {
+    padding-left: 0;
+    padding-right: 0; }
+    #banner .nav-tabs .nav-link {
+      padding: 1rem .5rem !important;
+      font-size: 1.2rem; } }

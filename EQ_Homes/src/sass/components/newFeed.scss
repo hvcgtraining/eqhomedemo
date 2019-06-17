@@ -1,0 +1,188 @@
+.newFeed{
+    background-color: #ebebeb;
+    .container{
+        .newFeed_flexBox{
+            .newFeed_flexBox_boxCard{
+                padding-top: 1em;
+                .title{
+                    margin-top: 1rem;
+                    font-size: 1.5rem;
+                    color: black;
+                    font-weight: bold;
+                    padding: 0;
+                    width: 100%;
+                    text-transform: uppercase;
+
+                }
+            }
+            .lineBottom{
+                border-bottom: 2px solid #00709e;    
+                margin-bottom: 1rem;
+            }
+            .slick{
+                display: flex;
+                .card{
+                    margin-bottom: 1rem;                    
+                    display: flex;
+                    flex-direction: row;
+                    .images-carousel{
+                        width: 50%;
+                    }
+                    .flied-card{
+                        cursor: pointer;
+                        margin: 30px 0 30px 4%;
+                        p{
+                            font-size: 1rem ;
+                            color: black;
+                        }
+                        &:hover{
+                            text-decoration: none;
+                        }
+                        .card-title{
+                            font-weight: bold;
+                            font-size: 1.8rem;
+                        }
+                        .card-date{
+                            font-family: monospace;
+                        }
+                        .card-content{
+    
+                        }
+                    }
+                }
+            }   
+        }
+    }
+}
+.newFeed{
+    padding-bottom: 5rem;
+    .slick-dots{
+        position: absolute;
+        bottom: -15px;
+        display: block;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        text-align: center;
+        z-index: 1050;
+
+        li{
+            position: relative;
+            display: inline-block;
+            margin: 0 5px;
+            padding: 0;
+            cursor: pointer;
+            button{
+                font-size: 0;
+                line-height: 0;
+                display: block;
+                width: 15px;
+                height: 15px;
+                padding: 5px;
+                cursor: pointer;
+                color: transparent;
+                border: 0;
+                outline: none;
+                background: #fff;
+                border-radius: 50%;
+            }
+        }
+        .slick-active{
+            button{
+                background-color: #50b7d8;
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width: 768px){
+    .newFeed{
+    
+        .container{
+            .newFeed_flexBox{
+                .newFeed_flexBox_boxCard{
+                    .title{
+            
+                    }
+                }
+                .lineBottom{
+            
+                }
+                .slick{
+                    .card{
+            
+                        .images-carousel{
+                            width: 100%;
+                        }
+                        .flied-card{
+                
+                            p{
+                                font-size: 1.6rem;    
+                            }
+                            &:hover{
+                
+                            }
+                            .card-title{
+        
+                            }
+                            .card-date{
+                                
+                            }
+                            .card-content{
+        
+                            }
+                        }
+                    }
+                }   
+            }
+        }
+    }
+}
+@media screen and (max-width: 992px){
+    .newFeed{
+    
+        .container{
+            .newFeed_flexBox{
+                .newFeed_flexBox_boxCard{
+                    .title{
+            
+                    }
+                }
+                .lineBottom{
+            
+                }
+                .slick{
+                    .card{
+                        margin: 2rem 10rem;
+                    }
+                }
+            }
+        }
+    }
+}
+    
+@media screen and (max-width: 576px){
+    .newFeed{
+    
+        .container{
+            .newFeed_flexBox{
+                .newFeed_flexBox_boxCard{
+                    .title{
+            
+                    }
+                }
+                .lineBottom{
+            
+                }
+                .slick{
+                    .card{
+                        margin: 2rem 0rem;
+                    }
+                }
+            }
+        }
+    }
+}
+    
